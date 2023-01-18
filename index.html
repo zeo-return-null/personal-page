@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" /> -->
+    <link rel="stylesheet" href="./assets/css/terminal.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Juan Sepulveda - WebDev</title>
+  </head>
+  <body class="terminal">
+    <div class="terminal-nav">
+      <div class="terminal-logo">
+        <div class="logo terminal-prompt">
+          <a href="https://github.com/zeo-return-null" class="no-style">Zeo return null</a>
+        </div>
+      </div>
+      <nav class="terminal-menu">
+        <ul>
+          <!-- Para no romper la estetica, dejo el link pero planeo deshabilitar su 
+          funcionamiento con css usando pointer-events: none, como deje con un inline style -->
+          <li><a href="#index" class="menu-item">Inicio</a></li>
+          <li><a href="#about" class="menu-item">Sobre mi</a></li>
+          <li><a href="#projects" class="menu-item">Proyectos</a></li>
+          <li><a href="#contact" class="menu-item">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <main div class="grid" id="index">
+      <div class="title-container">
+        <h1 class="title text-center">Hola! Soy Juan Sepulveda</h1>
+      </div>
+      <!-- No me tome el trabajo de agregar imagenes por el momento pero deje puesto unos alts para que se comprenda -->
+        <div class="profile-pic-container">
+          <img src="./assets/img/profile-pic.jpg" alt="una bonita foto del desarrollador" class="profile-pic text-center"/>
+        </div>
+        <div class="description">
+          <blockquote>
+            <p class="text-center">
+              Desarrollador Fullstack con una clara preferencia por el Backend.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </main>
+    <hr>
+    <section id="about" class="container">
+      <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus quisquam optio, saepe officia nam sint voluptatem esse repellendus excepturi. Vitae excepturi, similique dolor possimus exercitationem neque nisi quos saepe. Vitae dicta soluta fugit eius voluptate laborum minus nobis id laudantium recusandae repellendus nostrum iusto facilis, odio, quae incidunt perspiciatis aperiam temporibus. Non, reprehenderit a vitae debitis repellendus corporis laudantium numquam aliquam veritatis cupiditate accusantium odio quisquam modi. Omnis nam, recusandae velit, eos laboriosam consequatur in, quisquam consequuntur ad numquam debitis similique dignissimos optio? Laudantium suscipit quas nesciunt eum consectetur perspiciatis atque fugit harum, fuga enim. Error veniam quidem possimus.
+      </p>
+    </section>
+    <hr>
+    <section id="projects" class="container">
+     <figure class="terminal-card project-card">
+      <header><a href="https://github.com/zeo-return-null/impresion3d-coderhouse/" class="link-no-style" target="_blank">Impresiones del Bajo Negro</header>
+      <img src="./assets/img/impresiones-del-bajo-negro.png" alt="captura del index de la pagina impresiones del bajo negro" class="project-img" />
+        <figcaption class="card-description text-center">
+          Desarrollo de Ecommerce realizado con HTML5, CSS y Javascript Vanilla.
+        </figcaption>
+        <a href="https://zeo-return-null.github.io/impresion3d-coderhouse/" class="btn" target="_blank">ver más</a>
+     </figure>
+     <figure class="terminal-card project-card">
+      <header><a href="https://github.com/zeo-return-null/skill-test-5" class="link-no-style" target="_blank">Chat Factory</a></header>
+      <img src="./assets/img/chat-factory.png" alt="captura del login y registro de chat factory" class="project-img" />
+        <figcaption class="card-description text-center">Desarrollo realizado con Node.js de una chat utilizando Socket.io, permite registrarse y loguearse. Tambien cuenta con un mailer.</figcaption>
+        <a href="https://chat-factory.onrender.com/" class="btn" target="_blank">ver más</a>
+     </figure>
+     <figure class="terminal-card project-card">
+      <header><a href="https://github.com/zeo-return-null/libros-perdidos" class="link-no-style" target="_blank">Libros Perdidos</a></header>
+      <img src="./assets/img/libros-perdidos.png" alt="captura del index donde se ven algunos productos de libros perdidos" class="project-img" />
+        <figcaption class="card-description text-center">Desarrollo frontend realizado con React, conecta con firestore para recibir la información de los productos. Permite realizar una petición de compra y enviar un mail.</figcaption>
+        <a href="https://libros-perdidos.vercel.app/" class="btn" target="_blank">ver más</a>
+     </figure> 
+      <figure class="terminal-card project-card">
+      <header><a href="https://github.com/zeo-return-null/LaTinyBox" class="link-no-style" target="_blank">La Tinybox</a></header>
+      <img src="./assets/img/la-tinybox.png" alt="captura del index de la tinybox" class="project-img" />
+        <figcaption class="card-description text-center">Desarrollo frontend de una landing page realizado con un colega, se utilizo HTML5, CSS y Javascript Vanilla.</figcaption>
+        <a href="https://latinybox.com.ar/" class="btn" target="_blank">ver más</a>
+     </figure>     
+    </section>
+  </body>
+</html>

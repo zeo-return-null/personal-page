@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 1rem;
+}
+
+
+.terminal-nav {
+  @include breakpoint-down(small-medium) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @include breakpoint-down(small) {
+    align-items: center;
+  }
+}
+.terminal-menu ul {
+  @include breakpoint-down(small-medium) {
+    display: flex;
+    justify-content: center !important;
+  }
+}
+
+.menu-item {
+  @include breakpoint-down(small-medium) {
+    text-align: center;
+  }
+}
+
+hr {
+  @include breakpoint-down(small) {
+    margin: 0.2rem;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+  grid-template-areas:
+  "a b title profile-pic y"
+  "c description description profile-pic z";
+  
+  @include breakpoint-down(small) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.title-container {
+  grid-area: title;
+  
+  @include breakpoint-down(small) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: left;
+  grid-area: profile-pic;
+  
+  @include breakpoint-down(small) {
+    justify-content: center;
+    margin-bottom: 1.11rem;
+  }
+  .profile-pic {
+    width: 9.11rem;
+    height: 9.11rem;
+  }
+}
+
+.description {
+  grid-area: description;
+  justify-self: center;
+  @include breakpoint-down(small) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card {
+  margin: 2.11rem;
+  width: 38.11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  @include breakpoint-down(small) {
+    width: 21.11rem;
+  }
+  
+  header {
+    width: 100%;
+    
+    .link-no-style {
+      color: #222225;
+    }
+  }
+  
+  .project-img {
+    // width: 22.11rem;
+    // height: 16.11rem;
+    object-fit: cover;
+    
+    @include breakpoint-down(small) {
+      // width: 14.11rem;
+      // height: 12.11rem;
+      object-fit: cover;
+    }
+  }
+
+  .card-description {
+    margin: 1.11rem;
+  }
+
+  .btn {
+    margin-bottom: 0.666rem;
+  }
+}

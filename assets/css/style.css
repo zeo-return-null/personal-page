@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 1rem; }
+
+@media (max-device-width: 900px) {
+  .terminal-nav {
+    display: flex;
+    flex-direction: column-reverse; } }
+
+@media (max-device-width: 479px) {
+  .terminal-nav {
+    align-items: center; } }
+
+@media (max-device-width: 900px) {
+  .terminal-menu ul {
+    display: flex;
+    justify-content: center !important; } }
+
+@media (max-device-width: 900px) {
+  .menu-item {
+    text-align: center; } }
+
+@media (max-device-width: 479px) {
+  hr {
+    margin: 0.2rem; } }
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+  grid-template-areas: "a b title profile-pic y" "c description description profile-pic z"; }
+  @media (max-device-width: 479px) {
+    .grid {
+      display: flex;
+      flex-direction: column; } }
+
+.title-container {
+  grid-area: title; }
+  @media (max-device-width: 479px) {
+    .title-container {
+      display: flex;
+      justify-content: center; } }
+
+.profile-pic-container {
+  display: flex;
+  justify-content: left;
+  grid-area: profile-pic; }
+  @media (max-device-width: 479px) {
+    .profile-pic-container {
+      justify-content: center;
+      margin-bottom: 1.11rem; } }
+  .profile-pic-container .profile-pic {
+    width: 9.11rem;
+    height: 9.11rem; }
+
+.description {
+  grid-area: description;
+  justify-self: center; }
+  @media (max-device-width: 479px) {
+    .description {
+      display: flex;
+      justify-content: center; } }
+
+.text-center {
+  text-align: center; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.project-card {
+  margin: 2.11rem;
+  width: 38.11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media (max-device-width: 479px) {
+    .project-card {
+      width: 21.11rem; } }
+  .project-card header {
+    width: 100%; }
+    .project-card header .link-no-style {
+      color: #222225; }
+  .project-card .project-img {
+    object-fit: cover; }
+    @media (max-device-width: 479px) {
+      .project-card .project-img {
+        object-fit: cover; } }
+  .project-card .card-description {
+    margin: 1.11rem; }
+  .project-card .btn {
+    margin-bottom: 0.666rem; }
