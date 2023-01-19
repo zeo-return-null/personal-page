@@ -98,3 +98,7 @@ body {
     margin: 1.11rem; }
   .project-card .btn {
     margin-bottom: 0.666rem; }
+  .project-card .captcha {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
