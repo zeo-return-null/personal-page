@@ -100,6 +100,7 @@ body {
     margin-bottom: 0.666rem; }
 
 .captcha {
+  margin-bottom: 1.11rem;
   display: flex;
   justify-content: center;
   align-items: center; }
