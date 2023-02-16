@@ -52,6 +52,7 @@ body {
 
 .profile-pic-container {
   display: flex;
+  margin-left: 1rem;
   justify-content: left;
   grid-area: profile-pic; }
   @media (max-device-width: 479px) {
@@ -81,14 +82,14 @@ body {
 
 .project-card {
   margin: 2.11rem;
-  width: 38.11rem;
+  width: 26.11rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   @media (max-device-width: 479px) {
     .project-card {
-      width: 21.11rem; } }
+      width: 18.11rem; } }
   .project-card header {
     width: 100%; }
     .project-card header .link-no-style {
