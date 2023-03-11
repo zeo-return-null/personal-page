@@ -69,7 +69,9 @@ body {
   @media (max-device-width: 479px) {
     .description {
       display: flex;
-      justify-content: center; } }
+      justify-content: center;
+      align-self: center;
+      width: 14.11rem; } }
 
 .text-center {
   text-align: center; }
@@ -89,7 +91,7 @@ body {
   align-items: center; }
   @media (max-device-width: 479px) {
     .project-card {
-      width: 18.11rem; } }
+      width: 14.11rem; } }
   .project-card header {
     width: 100%; }
     .project-card header .link-no-style {

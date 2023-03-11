@@ -88,6 +88,8 @@ hr {
   @include breakpoint-down(small) {
     display: flex;
     justify-content: center;
+    align-self: center;
+    width: 14.11rem;
   }
 }
 
@@ -111,7 +113,7 @@ hr {
   align-items: center;
   
   @include breakpoint-down(small) {
-    width: 18.11rem;
+    width: 14.11rem;
   }
   
   header {
